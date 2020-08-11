@@ -1,7 +1,7 @@
 import pandas as pd
 
-def modify_labels():
-    csv_file = "/content/processed_data/labels_BeeNotBee_th0.csv"
+def modify_labels(path):
+    csv_file = path + "/labels_BeeNotBee_th0.csv"
     labels_BeeNotBee_th0 = pd.read_csv(csv_file)
 
     def add_new_labels(df):
